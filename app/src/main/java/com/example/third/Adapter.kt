@@ -6,17 +6,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.databasetask.R
 
-
-class Adapter(private val context: Context, private val list: List<Post>) :
+class Adapter(val context: Context, val list: List<Post>) :
     RecyclerView.Adapter<Adapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val title: TextView = view.findViewById(R.id.titleText)
         val body: TextView = view.findViewById(R.id.bodyText)
-
     }
 
-    private val inflater = LayoutInflater.from(context)
+    val inflater = LayoutInflater.from(context)
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = inflater.inflate(R.layout.item, parent, false)
         return ViewHolder(view)
