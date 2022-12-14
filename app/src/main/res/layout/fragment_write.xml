@@ -15,7 +15,8 @@
         android:hint="Введите заголовок поста"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="34dp" />
+        tools:layout_editor_absoluteY="34dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/addButton"
@@ -45,8 +46,6 @@
         android:hint="Введите текст поста"
         android:gravity="start"
         app:layout_constraintTop_toBottomOf="@id/titleText"
-        app:layout_constraintBottom_toTopOf="@id/addButton"
-
-         />
+        app:layout_constraintBottom_toTopOf="@id/addButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
