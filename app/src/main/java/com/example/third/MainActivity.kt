@@ -3,6 +3,7 @@ package com.example.third
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.room.Room
+import com.example.databasetask.R
 
 class MainActivity : AppCompatActivity() {
     lateinit var writeFragment: WriteFragment
